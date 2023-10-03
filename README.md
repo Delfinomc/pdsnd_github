@@ -2,7 +2,7 @@
 20 September 2023
 
 ### Project Title
-Explore US bikeshare data
+Explore US bikeshare data.
 
 ### Description
 The project is analysis of bike sharing data from three cities in the US. The data shows different information on the efficiency, frequency, rate of hiring, gender and age group.
