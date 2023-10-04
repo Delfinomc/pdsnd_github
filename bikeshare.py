@@ -69,16 +69,16 @@ def load_data(city, month, day):
 
 
         # filter by month to create the new dataframe
-        df = df[df['month'] ==month]
+        df = df[df['month'] == month]
 
     # filter by day of week if applicable
     if day != 'all':
         # filter by day of week to create the new dataframe
-        df = df[df['day_of_week'] ==day.title()]
+        df = df[df['day_of_week'] == day.title()]
 
 
     if df.columns.isin(['Birth Year']).any():
-        df['Birth Year']=df['Birth Year'].astype('Int64')
+        df['Birth Year'] = df['Birth Year'].astype('Int64')
     return df
 
 
@@ -87,7 +87,7 @@ def time_stats(df):
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
-    df['hour']= df['Start Time'].dt.hour
+    df['hour'] = df['Start Time'].dt.hour
 
 
     # display the most common month
